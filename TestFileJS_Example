@@ -1,0 +1,15 @@
+<center><form name=posl>
+<input type=text size=40 name=forma>
+</form></center>
+<script language="JavaScript">
+var line="Вписать сюда текст бегущей строки";
+var speed=100; var i=0;function m_line() {
+if(i++<line.length)
+{
+document.posl.forma.value=line.substring(0,i);
+}
+else {document.posl.forma.value=" ";
+i=0;} setTimeout("m_line()",speed);
+}
+</Script>
+<script language="JavaScript">m_line();</script>
